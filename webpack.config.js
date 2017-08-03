@@ -2,8 +2,8 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
-  context: path.resolve(__dirname, './src/js'),
-  entry: './index',
+  context: path.resolve(__dirname, './src/js/components'),
+  entry: ['./animations', './navigation', './registration', './errorTracking'],
   module: {
     rules: [
       {
