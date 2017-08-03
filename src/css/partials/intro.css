@@ -18,7 +18,7 @@
   z-index: 10;
   opacity: 0;
   background: var(--color-green) url('../../img/woopwoop-sd.jpg') 45% center no-repeat;
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     background-attachment: fixed;
     background-size: cover;
   }

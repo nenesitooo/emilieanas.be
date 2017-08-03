@@ -36,7 +36,10 @@
   font-size: 16px;
   display: inline-block;
   margin-top: 10px;
-  color: var(--color-pink);
+  &, a {
+    color: var(--color-pink);
+    text-decoration: none;
+  }
   @media (min-width: 768px) {
     font-size: 18px;
     padding: 12px 26px;
