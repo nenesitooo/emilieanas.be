@@ -1,0 +1,44 @@
+.gift {
+  @extend %wrapper;
+  padding: 20px 0;
+  margin: 100px auto;
+  background: #ccc url('../../img/memories-sd.jpg');
+  background-size: 100%;
+  @media (min-width: 768px) {
+    background-size: cover;
+    padding: 150px 0;
+    margin: 200px auto 100px;
+  }
+}
+
+.gift__card {
+  max-width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px 20px;
+  @media (min-width: 768px) {
+    max-width: 920px;
+    padding: 80px 100px;
+  }
+}
+
+.gift__node {
+  color: var(--color-pink);
+  font-size: 24px;
+  display: block;
+  margin-top: 20px;
+}
+
+.gift__account {
+  border: 1px solid var(--color-pink);
+  padding: 12px;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--color-pink);
+  @media (min-width: 768px) {
+    font-size: 18px;
+    padding: 12px 26px;
+  }
+}

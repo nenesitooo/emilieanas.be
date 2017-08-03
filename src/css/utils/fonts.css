@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Circular';
+  font-weight: 500;
+  font-style: normal;
+  src: url(../fonts/Circular-Book.eot?#iefix);
+  src: url(../fonts/Circular-Book.eot?#iefix) format("eot"), url(../fonts/Circular-Book.woff) format("woff"), url(../fonts/Circular-Book.ttf) format("truetype"), url(../fonts/Circular-Book.svg) format("svg")
+}
+@font-face {
+  font-family: 'Circular';
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/Circular-Medium.eot?#iefix);
+  src: url(../fonts/Circular-Medium.eot?#iefix) format("eot"), url(../fonts/Circular-Medium.woff) format("woff"), url(../fonts/Circular-Medium.ttf) format("truetype"), url(../fonts/Circular-Medium.svg) format("svg")
+}

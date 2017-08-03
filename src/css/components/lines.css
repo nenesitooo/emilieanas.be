@@ -1,0 +1,21 @@
+.line {
+  display: block;
+}
+
+.line--vertical {
+  height: 100px;
+  width: 1px;
+}
+
+.line--central {
+  margin: 0 auto;
+}
+
+.line--horizontal {
+  width: 100px;
+  height: 1px;
+}
+
+.line--pink {
+  background: var(--color-pink);
+}

@@ -1,0 +1,54 @@
+main > header {
+  @extend %wrapper;
+  padding: 20px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  position: sticky;
+  top: -1px;
+  z-index: 30;
+  opacity: 0;
+  animation: fadeIn 1s 4s ease-in-out forwards;
+}
+
+.logo {
+  color: var(--color-darkgreen);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  span {
+    color: var(--color-pink);
+  }
+}
+
+nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    float: left;
+    margin-right: 18px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  a {
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--color-darkgreen);
+    transition: color 300ms ease-in-out;
+    &:hover {
+      color: var(--color-pink);
+    }
+  }
+  li:not(.confirmation) {
+    display: none;
+    @media (min-width: 768px) {
+      display: inline;
+    }
+  }
+}

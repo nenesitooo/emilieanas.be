@@ -1,0 +1,95 @@
+.program {
+  @extend %wrapper;
+  margin-top: 100px;
+  max-width: 1400px;
+  text-align: center;
+  @media (min-width: 1025px) {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+  }
+}
+
+.program__title {
+  @extend %title;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 60px;
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.program__map {
+  max-width: 100%;
+  transition: opacity 300ms ease-in-out;
+  backface-visibility: hidden;
+  opacity: 0.6;
+  margin: 60px auto;
+  &:hover {
+    opacity: 0.8;
+  }
+  @media (min-width: 768px) {
+    max-width: 600px;
+    margin: 0;
+  }
+}
+
+.schedule {
+  width: 100%;
+  margin-bottom: 50px;
+  @media (min-width: 1025px) {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+.schedule__event {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > div {
+      margin-left: 40px;
+      min-width: 290px;
+    }
+  }
+  @media (min-width: 1025px) {
+    justify-content: flex-start;
+  }
+  .schedule__event__title {
+    color: var(--color-darkgreen);
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+      margin: 0;
+    }
+  }
+  address {
+    font-style: normal;
+  }
+}
+
+.schedule__event__time {
+  font-size: 30px;
+}
+
+.schedule__separator {
+  margin: 40px 0;
+  display: block;
+}
+
+.schedule__event__map {
+  text-decoration: none;
+  color: var(--color-darkgreen);
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  @media (min-width: 768px) {
+    margin: 0 0 0 60px;
+  }
+  &:hover {
+    border: none;
+  }
+}

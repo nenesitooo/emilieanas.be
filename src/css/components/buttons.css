@@ -1,0 +1,25 @@
+.btn {
+  background: #fff;
+  color: var(--color-darkgreen);
+  border: 1px solid;
+  padding: 6px 8px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  outline: none;
+  &:hover {
+    background: var(--color-darkgreen);
+    color: #fff;
+  }
+}
+
+.btn--secondary {
+  background: var(--color-darkgreen);
+  color: #fff;
+  &:hover {
+    background: none;
+    color: var(--color-darkgreen);
+  }
+}

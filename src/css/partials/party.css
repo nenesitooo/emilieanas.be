@@ -1,0 +1,55 @@
+.party {
+  position: relative;
+}
+
+.party__wrapper {
+  @extend %wrapper;
+  max-width: 862px;
+  margin: 70px auto 100px;
+  position: relative;
+  z-index: 20;
+}
+
+.party__bg {
+  background: var(--color-green);
+  position: absolute;
+  width: calc(100% + 40px);
+  height: 70vh;
+  max-height: 900px;
+  top: 20%;
+  left: -20px;
+  z-index: 10;
+}
+
+.party__visual {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.party__content {
+  padding: 20px;
+  margin: -20px 20px 0;
+  background: #fff;
+  position: relative;
+  z-index: 10;
+  @media (min-width: 768px) {
+    padding: 40px;
+    margin: -20px 40px 0;
+  }
+}
+
+.party__title {
+  @extend %title;
+}
+
+.party__desc {
+  @media (min-width: 768px) {
+    margin-top: 20px;
+    display: inline-block;
+    columns: 2;
+    p:first-child {
+      margin-top: 0;
+    }
+  }
+}
