@@ -20,6 +20,7 @@ main > header {
   letter-spacing: 3px;
   span {
     color: var(--color-pink);
+    font-size: 15px;
   }
 }
 
