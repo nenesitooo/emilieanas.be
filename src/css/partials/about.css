@@ -35,10 +35,6 @@
   @extend %title;
 }
 
-.about__subtitle {
-  @extend %subtitle;
-}
-
 .about__subtitle__line {
   width: 60px;
   float: left;

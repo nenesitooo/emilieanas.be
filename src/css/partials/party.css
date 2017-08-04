@@ -35,7 +35,7 @@
   z-index: 10;
   @media (min-width: 768px) {
     padding: 40px;
-    margin: -20px 40px 0;
+    margin: -60px 40px 0;
   }
 }
 
