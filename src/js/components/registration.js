@@ -7,8 +7,12 @@ const formButton = document.getElementsByClassName('js--button')[0]
 
 function register (e) {
   e && e.preventDefault()
+  e.target.checkValidity() && saveGuest(guest())
+}
+
+function saveGuest (guest) {
   formButton.disabled = true
-  axios.post('https://wedding-331a1.firebaseio.com/guests.json', guest())
+  axios.post('https://wedding-331a1.firebaseio.com/guests.json', guest)
     .then(() => form.classList.add('js--complete'))
     .catch((error) => {
       Raven.captureException(error)
