@@ -110,9 +110,9 @@
 .intro__line {
   position: relative;
   margin: -50px auto 0;
-  transform: scale(1, 0);
-  transform-origin: top center;
-  animation: growDown 1s 4s ease-in-out forwards;
+  transform: scale(1, 0) translate(0, 0);
+  transform-origin: center top;
+  animation: growDown 2s 4s 6 ease-in-out forwards, apparition 2s 16s ease-in-out forwards;
 }
 
 .js--ready {

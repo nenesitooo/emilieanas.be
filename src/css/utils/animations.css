@@ -44,11 +44,13 @@
 
 @keyframes growDown {
   0% {
-    transform: scale(1, 0);
-    opacity: 0;
+    transform: scale(1, 0) translate(0, 0);
+  }
+  50% {
+    opacity: 1;
   }
   100% {
-    transform: scale(1, 1);
-    opacity: 1;
+    transform: scale(1, 1) translate(0, 50px);
+    opacity: 0;
   }
 }
