@@ -1,3 +1,7 @@
+.rsvp {
+  overflow: hidden;
+}
+
 .register {
   width: 100%;
   max-width: 600px;
@@ -27,14 +31,17 @@
 }
 
 .register__success {
-  font-size: 22px;
+  font-size: 18px;
   color: var(--color-darkgreen);
   font-weight: bold;
   text-align: center;
   transform: scale(1,5) translate(0, -42px);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 300ms 600ms ease-in-out, transform 300ms 600ms ease-in-out,;
+  transition: opacity 300ms 600ms ease-in-out, transform 300ms 600ms ease-in-out;
+  @media (min-width: 768px) {
+    font-size: 22px;
+  }
 }
 
 .register__title {

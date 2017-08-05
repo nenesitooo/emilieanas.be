@@ -1,0 +1,62 @@
+.fireworks {
+  transform: translate(0, -400px);
+  z-index: -1;
+  position: relative;
+  pointer-events: none;
+}
+
+.firework {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.firework__inner,
+.firework__outer {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 100%;
+  transform: scale(0);
+}
+
+.firework__outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-pink);
+  animation-duration: 400ms;
+}
+
+.js--complete ~ .fireworks {
+  .firework__inner,
+  .firework__outer {
+    animation: pop 800ms ease-in-out forwards;
+  }
+  .firework--1 {
+    transform: translate(-400px, 0);
+    * { animation-delay: 1000ms; }
+  }
+  .firework--2 {
+    transform: translate(-200px, -140px);
+    * { animation-delay: 600ms; }
+  }
+  .firework--3 {
+    transform: translate(-100px, 50px);
+    * { animation-delay: 800ms; }
+  }
+  .firework--4 {
+    transform: translate(100px, -260px);
+    * { animation-delay: 1600ms; }
+  }
+  .firework--5 {
+    transform: translate(150px,-10px);
+    * { animation-delay: 1400ms; }
+  }
+  .firework--6 {
+    transform: translate(340px, -160px);
+    * { animation-delay: 1200ms; }
+  }
+}
