@@ -3,6 +3,7 @@
   z-index: -1;
   position: relative;
   pointer-events: none;
+  height: 0;
 }
 
 .firework {
