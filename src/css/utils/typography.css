@@ -6,6 +6,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p a {
+  text-decoration: none;
+  color: var(--color-pink);
+  font-weight: bold;
+  transition: color 300ms ease-in-out;
+  &:hover {
+    color: var(--color-darkgreen);
+  }
+}
+
 .title,
 %title {
   font-size: 26px;
