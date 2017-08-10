@@ -3,16 +3,16 @@
   <form class="register js--register" method="post">
     <div class="register__inner">
       <h2 class="register__title">Confirmer sa présence</h2>
-      <input class="field" name="name" type="text" placeholder="Votre (vos) nom(s)" required>
+      <input class="field" name="name" type="text" placeholder="Votre (vos) nom(s)" required aria-label="Votre nom" />
       <div class="register__people">
-        <select name="adults" class="register__people__list">
+        <select name="adults" class="register__people__list" aria-label="Nombre d'adultes">
           <option value="1">1 Adulte</option>
           <option value="2">2 Adultes</option>
           <option value="3">3 Adultes</option>
           <option value="4">4 Adultes</option>
           <option value="5">+5 Adultes</option>
         </select>
-        <select name="kids" class="register__people__list">
+        <select name="kids" class="register__people__list" aria-label="Nombre d'enfants">
           <option value="0">0 Enfant</option>
           <option value="1">1 Enfant</option>
           <option value="2">2 Enfants</option>
@@ -21,7 +21,7 @@
           <option value="5">+5 Enfants</option>
         </select>
       </div>
-      <textarea class="field" name="msg" rows="6" placeholder="Message optionnel (musiques souhaitées, allergies, ...)"></textarea>
+      <textarea class="field" name="msg" rows="6" placeholder="Message optionnel (musiques souhaitées, allergies, ...)" aria-label="Message optionnel"></textarea>
       <div class="register__confirms">
         <button class="register__btn btn btn--secondary js--button" type="submit">Confirmer</button>
       </div>
